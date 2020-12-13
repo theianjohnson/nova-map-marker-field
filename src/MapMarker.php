@@ -174,9 +174,4 @@ class MapMarker extends Field
     {
         return $this->withMeta([__FUNCTION__ => $url]);
     }
-
-    public function help(string $label)
-    {
-        return $this->withMeta([__FUNCTION__ => $label]);
-    }
 }

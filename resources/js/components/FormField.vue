@@ -48,7 +48,6 @@
                 markerOptions: {
                     interactive: false,
                 },
-                help: this.field.help || null,
             };
         },
 
@@ -204,6 +203,7 @@
         :errors="errors"
         :field="field"
         :full-width-content="true"
+        :show-help-text="showHelpText"
     >
         <template slot="field">
             <div class="map-field z-10 p-0 w-full form-control form-input-bordered overflow-hidden relative"
