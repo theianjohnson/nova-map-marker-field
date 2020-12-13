@@ -48,6 +48,7 @@
                 markerOptions: {
                     interactive: false,
                 },
+                help: this.field.help || null,
             };
         },
 
@@ -238,6 +239,7 @@
                 </l-map>
             </div>
         </template>
+        <div v-if="help" class="help-text help-text mt-2">{{ help }}</div>
     </default-field>
 </template>
 
